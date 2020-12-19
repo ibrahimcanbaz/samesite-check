@@ -7,7 +7,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/login', (req, res) => {
-    const cookie = 'user=can; samesite=strict; secure';
+    const cookie = 'user=can; samesite=none; secure';
     res.setHeader('set-cookie', [cookie]);
     res.send('ok')
   })
